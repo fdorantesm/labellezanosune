@@ -1,0 +1,19 @@
+---
+const props = Astro.props;
+---
+
+<div {...props} class="spotlight absolute top-0">
+  <img src={`img/spot.svg`} alt="Imagen de iluminación" />
+</div>
+
+<style>
+  .spotlight {
+    width: 100%;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      width: 100%;
+    }
+  }
+</style>

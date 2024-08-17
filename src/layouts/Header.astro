@@ -1,0 +1,95 @@
+---
+import Facebook from "../components/icons/Facebook.astro";
+import Instagram from "../components/icons/Instagram.astro";
+import Logo from "../components/icons/Logo.astro";
+import Whatsapp from "../components/icons/Whatsapp.astro";
+import Nav from "./Nav.astro";
+---
+
+<>
+  <header>
+    <div class="container m-auto app-header">
+      <div>
+        <a href="/">
+          <Logo class="logo" />
+        </a>
+      </div>
+      <Nav />
+      <div class="socials">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://wa.me/526238105669"
+            >
+              <Whatsapp />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://www.facebook.com/share/8WAjE8hrRGMALi79/?mibextid=LQQJ4d"
+            >
+              <Facebook />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://www.instagram.com/labellezanosune?igsh=MW9rMnRoZGE0dXQ5dA=="
+            >
+              <Instagram />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</>
+
+<style lang="scss">
+  .logo {
+    width: 200px;
+  }
+
+  header {
+    padding: 3rem 0;
+
+    .app-header {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+    }
+  }
+
+  @media (min-width: 640px) {
+    header {
+      padding: 5rem 0;
+    }
+    .logo {
+      width: 300px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul li {
+      display: inline-block;
+      margin-left: 0.5rem;
+      a {
+        color: var(--tw-color-primary);
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+</style>

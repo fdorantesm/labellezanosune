@@ -1,0 +1,74 @@
+<>
+  <section class="about py-5">
+    <div class="container m-auto" style="display: flex;">
+      <div class="who-are-we">
+        <div class="mission">
+          <h2 class="text-4xl text-secondary mb-2">Misión</h2>
+          <p>
+            Promover la belleza interna, transformación integral de la mujer, y
+            objetivos de vida como fundamento para proyectar juntas una imagen
+            de éxito.
+          </p>
+        </div>
+        <div class="vision">
+          <h2 class="text-4xl text-secondary mb-2">Visión</h2>
+          <p>
+            Ser un puente de expansión, y unir historias personales y
+            profesionales, generando riqueza humana y económica en nuestras
+            vidas y comunidades
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</>
+
+<style lang="scss">
+  .about {
+    background:
+      linear-gradient(to right, rgba(0, 0, 0, 0.125), #ceb99a),
+      url(img/about-us.png) no-repeat left center / contain;
+  }
+
+  .who-are-we {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    text-align: right;
+    gap: 2rem;
+    border-right: 1px solid var(--tw-color-primary-contrast);
+    padding: 0 2rem;
+  }
+
+  .mission {
+    margin-top: 5rem;
+  }
+
+  .vision {
+    margin-bottom: 5rem;
+  }
+
+  .mission,
+  .vision {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      right: -55px;
+      display: block;
+      width: 100%;
+      background: url(img/spark.svg) no-repeat center center / contain;
+      width: 44px;
+      height: 58px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .mission,
+    .vision {
+      width: 375px;
+    }
+  }
+</style>

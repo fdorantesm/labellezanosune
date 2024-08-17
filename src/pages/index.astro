@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import About from "../components/home/About.astro";
+import Hero from "../components/home/Hero.astro";
+---
+
+<Layout title="La belleza nos une">
+  <div class="page">
+    <Hero />
+    <About />
+  </div>
+</Layout>
+
+<style is:global lang="scss">
+  .app {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(img/sparks-bg.svg) no-repeat top right;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+</style>

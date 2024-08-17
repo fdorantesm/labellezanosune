@@ -1,0 +1,88 @@
+---
+import Sparks from "../icons/Sparks.astro";
+import Spotlight from "../Spotlight.astro";
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+import Whatsapp from "../icons/Whatsapp.astro";
+---
+
+<section>
+  <div class="container m-auto">
+    <div class="h-20"></div>
+    <Spotlight style={{ maxWidth: "600px" }} />
+    <div class="m-auto my-4">
+      <div
+        class="build-text w-500 font-bold uppercase text-primary-alt text-3xl md:text-5xl"
+      >
+        <div class="relative">
+          <span>Website</span>
+          <span>
+            <Sparks
+              class="absolute"
+              style={{
+                fill: "var(--tw-color-primary)",
+                top: "-40px",
+                width: "4rem",
+                left: "calc(100% - 8vw)",
+              }}
+            />
+          </span>
+        </div>
+        <div>
+          listo para <span class="text-primary">brillar</span> muy pronto
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <a
+        href="https://www.eventbrite.com/e/mas-alla-del-espejo-tickets-951721002137?utm_experiment=test_share_listing&aff=ebdsshios"
+        class="buy-tickets inline-block text-white bg-secondary py-2 px-5 rounded-2xl text-xl md:text-5xl uppercase font-bold"
+        target="_blank"
+        rel="nofollow noopener noreferrer">Comprar boleto</a
+      >
+    </div>
+    <div>
+      <div class="flex space-x-3 justify-center my-4">
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://wa.me/526238105669"
+          class="text-2xl"
+        >
+          <Whatsapp />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://www.facebook.com/share/8WAjE8hrRGMALi79/?mibextid=LQQJ4d"
+          class="text-2xl"
+        >
+          <Facebook />
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://www.instagram.com/labellezanosune?igsh=MW9rMnRoZGE0dXQ5dA=="
+          class="text-2xl"
+        >
+          <Instagram />
+        </a>
+      </div>
+    </div>
+    <div class="h-20"></div>
+  </div>
+</section>
+
+<style lang="scss">
+  .build-text {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .build-text {
+      width: 500px;
+    }
+  }
+</style>
